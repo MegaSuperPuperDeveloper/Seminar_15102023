@@ -15,6 +15,10 @@ void CountOneToN(int N, int count = 1) { // Функция выводит чис
 
 Console.Write("Введите число N: ");
 int num = Convert.ToInt32(Console.ReadLine());
+if(num < 1) {
+    Console.WriteLine("Ошибка ввода!");
+    return;
+}
 Console.Write($"N = {num} -> " + '"');
 CountOneToN(num);
 Console.Write('"');
