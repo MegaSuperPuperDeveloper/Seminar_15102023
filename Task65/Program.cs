@@ -16,6 +16,10 @@ void CountMtoN(int M, int N) { // Функция выводит все числ�
 Console.Write("Введите число N: ");
 int num = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число M: ");
+if(num < 1 || num1 < 1) {
+    Console.WriteLine("Ошибка ввода!");
+    return;
+}
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write($"M = {num1}; N = {num} -> " + '"');
 CountMtoN(num, num1);
